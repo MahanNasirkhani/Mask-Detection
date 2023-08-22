@@ -12,4 +12,10 @@ One of MobileSAM's notable capabilities is the ability to accept input points de
 
 By incorporating Mediapipe's facemesh functionality, we can accurately pinpoint specific areas within images for segmentation, thus enhancing the precision and customization of the segmentation process.
 
+# Classification
+
+In our classification approach, we leverage the VGG16 architecture. To optimize the model's performance, we've implemented a strategy of freezing the convolutional layers 1 to 3, while allowing layers 4 and 5 to remain trainable. The model culminates in a 128-node dense layer, followed by a dropout layer with a retention rate of 0.6. The final touch is an output layer containing a single neuron, activated by the sigmoid activation function.
+
+Our data augmentation strategy is executed using Keras layers, enhancing the diversity and robustness of our dataset. We've defined the input shape as 100x100 with three color channels, contributing to a more comprehensive feature representation within our classification process.
+
 Through this multi-step process, we not only attain remarkable accuracy but also leverage cutting-edge techniques to enhance our Mask Detection model's performance.
