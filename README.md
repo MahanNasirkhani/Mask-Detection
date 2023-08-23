@@ -18,4 +18,12 @@ In our classification approach, we leverage the VGG16 architecture. To optimize 
 
 Our data augmentation strategy is executed using Keras layers, enhancing the diversity and robustness of our dataset. We've defined the input shape as 100x100 with three color channels, contributing to a more comprehensive feature representation within our classification process.
 
+# Result
+
+Utilizing transfer learning with VGG16, we've attained a 95% model accuracy. By fine-tuning layers, incorporating dropout, and employing data augmentation, we've harnessed pre-trained features to achieve this result.
 Through this multi-step process, we not only attain remarkable accuracy but also leverage cutting-edge techniques to enhance our Mask Detection model's performance.
+
+# Dataset
+
+MobileSAM input : https://drive.google.com/drive/folders/1ofYhxHYr6-PnJBcAr2iTT6-6imDgsKZ6?usp=sharing
+MobileSAM output : https://drive.google.com/drive/folders/1srXNZr6dZ65uXJeBrs2SryHoHDsj4UXH?usp=sharing
